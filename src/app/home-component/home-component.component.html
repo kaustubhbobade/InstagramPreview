@@ -1,0 +1,3 @@
+<header>Instagram Preview</header>
+<app-left-component class="component" (postClicked)="postClicked($event)"></app-left-component>
+<app-right-component class="component" *ngIf="post" [post]="post"></app-right-component>

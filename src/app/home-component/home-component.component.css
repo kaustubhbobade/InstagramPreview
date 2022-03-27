@@ -1,0 +1,13 @@
+header{
+    position: relative;
+    font-family: cursive;
+    font-weight: bolder;
+    left: 38%;
+    font-size: xxx-large;
+    padding: 5px;
+}
+
+.component{
+    width: 48%;
+    float: left;
+}

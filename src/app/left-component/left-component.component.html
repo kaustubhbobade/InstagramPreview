@@ -1,0 +1,14 @@
+<div class="spinner" *ngIf="spinner">
+    <div class="loader"></div>
+</div>
+<div style="height: 625px; overflow: auto;">
+    <div class="card" style="width: 18rem; margin: auto; border-bottom: 3px solid; margin-bottom: 10px;" *ngFor="let item of data" (click)="isPostClicked(item)">
+        <img [src]="item.Image" alt="Image by Instagram" class="card-img-top" style="height: 18rem;">
+        <div class="card-body">
+            <div class="card-text">
+                <i class="material-icons">favorite_border</i> <span style="position: absolute;"> {{item.likes}}</span>
+                <span style="float: right;">{{item.timestamp | date: "short"}}</span>
+            </div>
+        </div>
+    </div>
+</div>

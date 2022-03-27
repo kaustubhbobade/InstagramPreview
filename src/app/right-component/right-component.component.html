@@ -1,0 +1,12 @@
+<div class="card" style="width: 85%; height: 625px; overflow: auto; margin: auto; border-bottom: 3px solid; margin-bottom: 10px;">
+    <img [src]="post.Image" alt="Selected post" class="card-img-top" style="height: 85%;">
+    <div class="card-body">
+        <div class="card-text">
+            <div class="example-button-container">
+                <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon" (click)="buttonClicked()">
+                  <mat-icon>{{clicked?"favorite":"favorite_border"}}</mat-icon> <span style="position: absolute;"> {{clicked? " Liked!":" Like Me!"}}</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
